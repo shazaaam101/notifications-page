@@ -1,0 +1,27 @@
+.notification-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-bar .notified-unread {
+    font-weight: var(--primary-fw);
+    color: var(--neutral-very-dark-blue);
+}
+
+.notification-bar .notified-unread > span {
+    margin-left: .5em;
+    padding: .1em .5em;
+    border-radius: .25em;
+    background-color: var(--primary-blue);
+    color: var(--neutral-white);
+}
+
+.notification-bar .mark-all-as-read {
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.notification-bar .mark-all-as-read:hover {
+    color: var(--primary-blue);
+}

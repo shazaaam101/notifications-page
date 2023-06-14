@@ -1,0 +1,73 @@
+.notification-item {
+    background-color: var(--neutral-very-light-grayish-blue);
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.notification-item:not(:has(.mark-unread)) {
+    background-color: var(--neutral-white);
+}
+
+.notification-item .wrapper :is(.action, .obj) {
+    margin-left: .5ch;
+}
+
+.notification-item .wrapper {
+    padding: 1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+    
+}
+
+.notification-item .wrapper .name {
+    color: var(--neutral-very-dark-blue);
+}
+
+.notification-item .wrapper img {
+    max-width: 50px;
+    aspect-ratio: 1;
+}
+
+.notification-item .wrapper .obj {
+    color: var(--neutral-dark-grayish-blue);
+}
+
+.notification-item .wrapper :is(.name, .obj):hover {
+    transition: 0.3s ease;
+}
+
+.notification-item .wrapper .obj.group, 
+.notification-item .wrapper :is(.name, .obj):hover {
+    cursor: pointer;
+    color: var(--primary-blue);
+}
+
+.notification-item .wrapper .mark-unread {
+    display: inline-block;
+    width: 10px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-left: .5em;
+    background-color: var(--primary-red);
+}
+
+.notification-item .wrapper .message {
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid var(--neutral-grayish-blue);
+    border-radius: 10px;
+    color: var(--neutral-dark-grayish-blue);
+    transition: 0.3s ease;
+}
+
+.notification-item .wrapper .message:hover {
+    border: 1px solid var(--neutral-light-grayish-blue-1);
+    background-color: var(--neutral-light-grayish-blue-1);
+    cursor: pointer;
+}
+
+.notification-item .wrapper .picture {
+    margin-left: auto;
+}
